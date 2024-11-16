@@ -65,13 +65,13 @@ JoinSessionCompleteDelegate(FOnJoinSessionCompleteDelegate::CreateUObject(this, 
 	{
 		OnlineSessionInterface = OnlineSubsystem->GetSessionInterface();
 
-		if (GEngine)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue,
-			                                 FString::Printf(
-				                                 TEXT("Found Subsystem %s"),
-				                                 *OnlineSubsystem->GetSubsystemName().ToString()));
-		}
+		// if (GEngine)
+		// {
+		// 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue,
+		// 	                                 FString::Printf(
+		// 		                                 TEXT("Found Subsystem %s"),
+		// 		                                 *OnlineSubsystem->GetSubsystemName().ToString()));
+		// }
 	}
 }
 
